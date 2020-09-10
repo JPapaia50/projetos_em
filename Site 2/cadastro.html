@@ -40,31 +40,63 @@ cadastro <!DOCTYPE html>
           </form>
         </div>
       </nav>
-             <div class="container">
-         <div class="row"> 
-             <div class="col">
-                 COL 1 
-             </div>
-             <div class="col">
-                 COL 2 
-             </div>
-             <div class="col">
-                 COL 3
-             </div>
-        </div>
-            <div class="row">
+      <div class="container"> 
+        <form>
+          <div class="row">
             <div class="col-sm-12 col-md-6">
-                <button type="button" class="btn btn-outline-success">Salvar</button>
-                <button type="button" class="btn btn-outline-danger">Cancelar</button>
-</div>
-            <div class="col col-sm-12 col-md-6">
-                 COL 2
-</div>
-           
-         </div>
-
-
-</div>
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" id="Nome">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Embalagem">
+            <label for="Embalagem">Embalado</label> 
+          </div>
+          <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" min="0" class="form-control" id="quantidade">
+          </div>
+          <div class="form-group">
+            <label for="valor">Valor:</label>
+            <input type="number" min="0" max="50" class="form-control" id="valor">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+              <label for="categoria">Categoria:</label>
+                  <select class="form-control" id="categoria">
+                    <option>Brigadeiro</option>
+                    <option>Beijinho</option>
+                    <option>Trufa</option>
+                   </select>
+             <div class="form-group">
+                <label for="sabor">Sabor:</label>
+                <select class="form-control" id="sabor">
+                  <option>Chocolate</option>
+                  <option>Morango</option>
+                  <option>Nutella</option>
+                  <option>Maracujá</option>
+                  <option>Coco</option>
+                </select>
+              <div class="form-group">
+                <label for="descrição">Descrição:</label>
+                <input type="textarea" class="form-control" id="descrição">
+              </div>
+              <div class="row">
+              <div class="col-sm-12 col-md-6">
+              </div>
+              <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+              </div>
+              <div class= "col-sm-12 col-md-6">
+                <button type="submit" class="btn btn-success btn-block">Salvar</button>
+              </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+            </form>
       
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
